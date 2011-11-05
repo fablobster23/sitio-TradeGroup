@@ -1,0 +1,22 @@
+<div class="contenedor">
+<div id="tri">
+	<%= image_tag "triangulo.png", :size=>"60x36" %>
+	</div>
+	<div class="contenido">
+	<div class="forma">
+<p id="notice"><%= notice %></p>
+
+<div id="showAnuncios">
+
+<p>
+  <b>Titulo:</b>
+  <%= @categoria.titulo %>
+</p>
+</div>
+
+<%= link_to 'Editar', edit_categoria_path(@categoria) %> |
+<%= link_to 'Regresar', categorias_path %>
+
+</div>
+</div>
+</div>

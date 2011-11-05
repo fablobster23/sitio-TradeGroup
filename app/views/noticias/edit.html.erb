@@ -1,0 +1,16 @@
+<div class="contenedor">
+<div id="tri">
+	<%= image_tag "triangulo.png", :size=>"60x36" %>
+	</div>
+	<div class="contenido">
+<h1>Editar noticia</h1>
+
+<div class="forma">
+
+<%= render 'form' %>
+
+<%= link_to 'Mostrar', @noticia %> |
+<%= link_to 'Regresar', noticias_path %>
+			</div>
+	</div>
+</div>

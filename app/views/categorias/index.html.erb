@@ -1,0 +1,33 @@
+<div class="contenedor">
+	<div id="tri">
+	<%= image_tag "triangulo.png", :size=>"60x36" %>
+	</div>
+	<div class="contenido">
+<div class="forma">
+<h1>Categorias</h1>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @categorias.each do |categoria| %>
+  <tr>
+    <td><%= categoria.titulo %></td>
+    <td><%= link_to 'Mostrar', categoria %></td>
+    <td><%= link_to 'Editar', edit_categoria_path(categoria) %></td>
+    <td><%= link_to 'Destruir', categoria, confirm: 'Estas seguro?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nueva Categoria', new_categoria_path %>
+<%= link_to 'Regresar', noticias_path %>
+ </div>
+ </div>
+ </div>

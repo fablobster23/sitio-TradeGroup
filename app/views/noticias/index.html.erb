@@ -1,0 +1,36 @@
+<div class="contenedor">
+	<div id="tri">
+	<%= image_tag "triangulo.png", :size=>"60x36" %>
+	</div>
+	<div class="contenido">
+<div class="forma">
+<h1>Noticias</h1>
+
+
+<% @noticias.each do |noticia| %>
+	<div class="GaNoticias">
+	<div class="ImagenNoticia">
+  	<%= image_tag noticia.imagen, :size => "150 × 150" %>
+  	</div>
+  	<div class="Bloque">
+    <h2><%= noticia.titulo %></h2>
+    <%= noticia.contenido %>
+ 	<br />
+ 	<br />
+    <td><%= link_to 'Mostrar', noticia %></td>
+    <td><%= link_to 'Editar', edit_noticia_path(noticia) %></td>
+    <td><%= link_to 'Destruir', noticia, confirm: 'Estas seguro?', method: :delete %></td>
+    </div>
+	</div>
+	<div class="break">
+	</div>
+<% end %>
+
+
+<br />
+<br />
+<%= link_to 'Nueva Noticia', new_noticia_path %>
+<%= link_to 'Categorias', categorias_path %>
+</div>
+</div>
+</div>

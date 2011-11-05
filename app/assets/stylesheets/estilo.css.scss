@@ -1,0 +1,194 @@
+$rojo: #b90000;
+$azul: #032e68;
+$menu: #6196cf;
+
+body{
+font-family: Helvetica;
+margin:0px;
+padding:0px;
+background:#4d49ff;
+}
+
+#todo{
+background:white;
+margin-left:auto;
+margin-right:auto;
+}
+
+#menus {
+width:960px;
+margin-left:auto;
+margin-right:auto;
+overflow:hidden;}
+
+#logotipo{
+text-align:center;
+clear:both;
+position:relative;
+margin:0 auto;
+width:1024px;
+height:181px;
+}
+
+#azul {
+height:18px;
+background:$azul;}
+
+#album{
+width:960px;
+height:199px;
+position:relative;
+margin:0 auto;
+}
+
+#menu ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	text-indent:0px;
+	height:50px;
+	}
+	
+#menu ul li{
+	display:inline;
+	float:left;
+	position: relative;
+	z-index:10;
+    background-color:$menu;
+	width:192px;
+	margin:0px;
+	text-indent:0px;
+    }
+    
+#menu ul li a {
+text-decoration:none;
+color:#FFF;
+display:block;
+font-family:Verdana, Geneva, sans-serif;
+font-size:25px;
+font-weight:bold;
+width:192px;
+padding-top:5px;
+padding-bottom:5px;
+text-align:center;
+}
+
+#menu ul li a:hover {background-color:#032e68;}
+
+.break {clear:both;}
+
+.contenedor {
+width:960px;
+background-color:white;
+margin-left:auto;
+margin-right:auto;
+margin-top:-10px;
+overflow:hidden;}
+
+.contenido {
+margin-top:-17px;
+width:940px;
+background-color:#d1d9ff;
+position:relative;
+left:10px;
+z-index:100;}
+
+.contenidoDos {
+margin-top:0px;
+margin-bottom:100px;
+width:940px;
+height:612px;
+background-color:#d1d9ff;
+position:relative;
+left:10px;
+z-index:100;}
+
+.contenido p {
+padding-left:50px;
+padding-right:50px;
+padding-bottom:50px;}
+
+
+#provicionaluno img {margin-top:20px;
+margin-left:25px;}
+
+#provicionaldos img {margin-top:20px;
+margin-bottom:25px;}
+
+#triContacto {
+margin-top:20px;
+margin-left:850px;}
+
+#triNosotros {
+margin-top:20px;
+margin-left:50px;}
+
+#triCategorias {
+margin-top:20px;
+margin-left:450px;}
+
+#triServicios {
+margin-top:20px;
+margin-left:250px;}
+
+#tri {
+margin-top:20px;
+margin-left:650px;}
+
+h1{padding-top:50px;
+padding-left:50px;
+margin-top:17px;
+color:#6d9dd4;}
+
+h2{
+padding-left:50px;
+color:#6d9dd4;}
+
+h3 {margin-top:-5px;
+padding-left:90px;}
+
+#linkCategoria {
+padding-left:150px;}
+
+.forma {padding-left:70px;
+padding-bottom:100px;
+margin-bottom:20px;}
+
+table {padding-left:20px;}
+
+td {padding:20px;}
+
+#showAnuncios p {padding:0px;}
+
+#showAnuncios img {margin-top:50px;
+width:850px;
+height:150px;}
+
+#showCategorias p {padding:0px;
+}
+
+.preview {float:left;
+margin:50px;}
+
+.preview img {width:200px;
+height:200px;}
+
+.preview a {
+text-decoration:none;
+color:#6d9dd4;
+text-align:center;}
+
+.ImagenNoticia {
+margin-right:40px;
+float:left;
+}
+
+.GaNoticias{
+width:750px;
+margin-bottom:40px;}
+
+.GaNoticias img {width:150px;
+height:150px;
+}
+
+.bloque {float:left;}

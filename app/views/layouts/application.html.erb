@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TradeGroup</title>
+  <%= stylesheet_link_tag    "application", "estilo" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="todo">
+	<div id="logotipo">
+		<%= link_to (image_tag "logoTradeGo.jpg", :size=>"1024x181") %>
+	</div>
+	<div id="azul">
+	</div>
+</div>
+<div id="menus">
+	<div id="album">
+		<%= image_tag "FOTOOOO.JPG", :size=>"960x199" %>
+	</div>
+
+	<div id="menu">
+	<ul>
+		<li><%= link_to "Nosotros", index_path %></li>
+		<li><%= link_to "Servicios", servicios_path %></li>
+		<li><%= link_to "Productos", productos_path %></li>
+		<li><%= link_to "Noticias", noticias_path %></li>
+		<li><%= link_to "Contacto", contacto_path %></li>
+	</ul>
+	</div>
+</div>
+	<div class="break">
+	</div>
+	<%= yield %>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<div class="contenedor">
+<div id="tri">
+	<%= image_tag "triangulo.png", :size=>"60x36" %>
+	</div>
+	<div class="contenido">
+	<div class="forma">
+<p id="notice"><%= notice %></p>
+
+<div id="showAnuncios">
+ <%= image_tag @noticia.imagen %>
+<p>
+  <b>Titulo:</b>
+  <%= @noticia.titulo %>
+</p>
+
+<p>
+  <b>Contenido:</b>
+  <%= @noticia.contenido %>
+</p>
+
+ 
+
+
+<p>
+  <b>Categoria:</b>
+  <%= @noticia.categoria.titulo %>
+</p>
+</div>
+
+<%= link_to 'Editar', edit_noticia_path(@noticia) %> |
+<%= link_to 'Regresar', noticias_path %>
+</div>
+</div>
+</div>
