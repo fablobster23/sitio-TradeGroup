@@ -12,20 +12,14 @@
 	</div>
 	<div class="galeria">
 	<h2>Noticias Nuevas</h2>
-		<% @todascategorias = Categoria.all %>
-	<% if !@todascategorias.blank? %>
-		<% for categoria in @todascategorias %>
-		<h2><% link_to categoria.titulo, categoria %></h2>
-		<% @todasnoticias = categoria.noticias %>
+		<% @todasnoticias = Noticia.find(:all, :order => 'titulo', :limit => 3) %>
 			<% for noticia in @todasnoticias %>
 				<div class="preview">
 				<%= image_tag noticia.imagen, :size =>"317 × 182" %>
 				<p><%= link_to noticia.titulo, noticia %></p>
 				</div>
 		<% end %>
-	<% end %>
 	<div class="break">
 	</div>
-<% end %>
 	</div>
 </div>
