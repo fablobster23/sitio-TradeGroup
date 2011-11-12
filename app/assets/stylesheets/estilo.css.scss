@@ -6,7 +6,8 @@ body{
 font-family: Helvetica;
 margin:0px;
 padding:0px;
-background:#4d49ff;
+background-image:url('fondo.jpg');
+background-repeat:repeat-x;
 }
 
 #todo{
@@ -168,10 +169,10 @@ height:150px;}
 }
 
 .preview {float:left;
-margin:50px;}
+margin:2px;}
 
-.preview img {width:200px;
-height:200px;}
+.preview img {width:315px;
+height:182px;}
 
 .preview a {
 text-decoration:none;
