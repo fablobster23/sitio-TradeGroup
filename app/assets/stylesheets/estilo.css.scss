@@ -3,7 +3,7 @@ $azul: #032e68;
 $menu: #6196cf;
 
 body{
-font-family: Helvetica;
+font-family: 'Terminal Dosis', sans-serif;
 margin:0px;
 padding:0px;
 background-image:url('fondo.jpg');
@@ -27,8 +27,8 @@ text-align:center;
 clear:both;
 position:relative;
 margin:0 auto;
-width:1024px;
-height:181px;
+width:960px;
+height:135px;
 }
 
 #azul {
@@ -65,7 +65,7 @@ margin:0 auto;
 text-decoration:none;
 color:#FFF;
 display:block;
-font-family:Verdana, Geneva, sans-serif;
+font-family: 'Actor', sans-serif;
 font-size:25px;
 font-weight:bold;
 width:192px;
@@ -107,7 +107,7 @@ z-index:100;}
 .contenido p {
 padding-left:50px;
 padding-right:50px;
-padding-bottom:50px;}
+padding-bottom:30px;}
 
 
 #provicionaluno img {margin-top:20px;
@@ -138,7 +138,7 @@ margin-left:650px;}
 
 h1{padding-top:50px;
 padding-left:50px;
-margin-top:17px;
+margin-top:17px;  
 color:#6d9dd4;}
 
 h2{
