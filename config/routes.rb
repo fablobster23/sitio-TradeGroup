@@ -1,4 +1,8 @@
 TradeGroup::Application.routes.draw do
+  resources :productos
+
+  resources :usuarios
+
   resources :categorias
 
   resources :noticias
