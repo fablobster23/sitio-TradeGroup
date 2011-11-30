@@ -28,7 +28,12 @@
 </table>
 <br />
 
-<%= link_to 'New Producto', new_producto_path %>
+
+<%= link_to 'Añadir Nuevo', new_producto_path %>
+
+<div class="trade_pagination">
+<%= will_paginate @productos %>
+</div>
 
 	</div>
 	</div>

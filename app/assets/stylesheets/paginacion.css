@@ -1,0 +1,32 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+*/
+
+.trade_pagination {
+  text-align: center;
+  padding: 1em;
+  cursor: default; }
+  .trade_pagination a, .trade_pagination span {
+    padding: 0.2em 0.3em; }
+  .trade_pagination .disabled {
+    color: #aaaaaa; }
+  .trade_pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    background-color: #6196CF;
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.5;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; }
+  .trade_pagination a {
+    text-decoration: none;
+    color: black; }
+    .trade_pagination a:hover, .trade_pagination a:focus {
+      text-decoration: underline; }
