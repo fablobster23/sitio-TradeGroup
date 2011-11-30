@@ -1,5 +1,14 @@
-<h1>New producto</h1>
-
+<div class="contenedor">
+	<div id="triCategorias">
+	<%= image_tag "triangulo.png", :size=>"60x36" %>
+</div>
+	<div class="contenido">
+	<h1>Nuevo producto</h1>
+	<div class="forma">
 <%= render 'form' %>
 
+<%= link_to 'Show', @producto %> |
 <%= link_to 'Back', productos_path %>
+</div>
+</div>
+</div>

@@ -1,9 +1,9 @@
 <div class="contenedor">
 	<div id="triCategorias">
 	<%= image_tag "triangulo.png", :size=>"60x36" %>
-
-<div class="contenidoDos">
-		<div id="provicionaldos">
+</div>
+<div class="contenido">
+<div class="forma">
 <h1>Listing productos</h1>
 <table>
   <tr>
@@ -32,11 +32,17 @@
 
 	</div>
 	</div>
-	</div>
 	
-<div class="galeria">
-	<%= image_tag "baner.jpg", :size=>"317x182" %>
-	<%= image_tag "baner.jpg", :size=>"317x182" %>
-	<%= image_tag "baner.jpg", :size=>"317x182" %>
+	<div class="galeria">
+	<h2>Noticias Nuevas</h2>
+		<% @todasnoticias = Noticia.find(:all, :order => 'titulo', :limit => 3) %>
+			<% for noticia in @todasnoticias %>
+				<div class="preview">
+				<%= image_tag noticia.imagen, :size =>"317 × 182" %>
+				<p><%= link_to noticia.titulo, noticia %></p>
+			</div>
+		<% end %>
+							<div class="break">
+					</div>
 	</div>
-</div>
+	</div>

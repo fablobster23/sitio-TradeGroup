@@ -8,8 +8,15 @@
 		</div>
 	</div>
 	<div class="galeria">
-	<%= image_tag "baner.jpg", :size=>"317x182" %>
-	<%= image_tag "baner.jpg", :size=>"317x182" %>
-	<%= image_tag "baner.jpg", :size=>"317x182" %>
+	<h2>Noticias Nuevas</h2>
+		<% @todasnoticias = Noticia.find(:all, :order => 'titulo', :limit => 3) %>
+			<% for noticia in @todasnoticias %>
+				<div class="preview">
+				<%= image_tag noticia.imagen, :size =>"317 × 182" %>
+				<p><%= link_to noticia.titulo, noticia %></p>
+				</div>
+		<% end %>
+	<div class="break">
+	</div>
 	</div>
 </div>

@@ -1,5 +1,12 @@
+<div class="contenedor">
+	<div id="triCategorias">
+	<%= image_tag "triangulo.png", :size=>"60x36" %>
+</div>
+	<div class="contenido">
+	<div class="forma">
 <p id="notice"><%= notice %></p>
-
+<div id="showProducto">
+ <%= @producto.imagen %>
 <p>
   <b>Nombre:</b>
   <%= @producto.nombre %>
@@ -9,12 +16,11 @@
   <b>Descripcion:</b>
   <%= @producto.descripcion %>
 </p>
-
-<p>
-  <b>Imagen:</b>
-  <%= @producto.imagen %>
-</p>
+</div>
 
 
 <%= link_to 'Edit', edit_producto_path(@producto) %> |
 <%= link_to 'Back', productos_path %>
+</div>
+</div>
+</div>

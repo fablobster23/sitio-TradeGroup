@@ -96,7 +96,6 @@ z-index:100;}
 
 .contenidoDos {
 margin-top:0px;
-margin-bottom:100px;
 width:940px;
 height:612px;
 background-color:#d1d9ff;
@@ -107,7 +106,7 @@ z-index:100;}
 .contenido p {
 padding-left:50px;
 padding-right:50px;
-padding-bottom:30px;}
+padding-bottom:15px;}
 
 
 #provicionaluno img {margin-top:20px;
@@ -138,7 +137,8 @@ margin-left:650px;}
 
 h1{padding-top:50px;
 padding-left:50px;
-margin-top:17px;  
+margin-top:17px;
+margin-bottom:0px;
 color:#6d9dd4;}
 
 h2{
@@ -160,8 +160,13 @@ table {padding-left:20px;}
 td {padding:20px;}
 
 #showAnuncios p {padding:0px;}
+#showProducto p {padding:0px;}
 
 #showAnuncios img {margin-top:50px;
+width:850px;
+height:150px;}
+
+#showProducto img {margin-top:50px;
 width:850px;
 height:150px;}
 
@@ -169,15 +174,25 @@ height:150px;}
 }
 
 .preview {float:left;
-margin:2px;}
+margin-left:3px;
+margin-bottom:0px;
+padding-Bottom:0px;}
 
 .preview img {width:315px;
-height:182px;}
+height:182px;
+margin-bottom:0px;
+padding-Bottom:0px;}
 
 .preview a {
 text-decoration:none;
-color:#6d9dd4;
+color:#FFF;
 text-align:center;}
+
+.preview p {background-color:$azul;
+height:30px;
+padding-top:0px;
+margin-top:-5px;}
+
 
 .ImagenNoticia {
 margin-right:40px;
@@ -193,3 +208,10 @@ height:150px;
 }
 
 .bloque {float:left;}
+
+.galeria {
+background-color:$menu;}
+.TituloGaleria{backgrond-color:$menu;
+z-index:50;}
+
+.galeria h2 {background-color:$azul;}
