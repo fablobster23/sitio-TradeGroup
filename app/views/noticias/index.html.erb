@@ -26,11 +26,15 @@
 	</div>
 <% end %>
 
-
 <br />
 <br />
 <%= link_to 'Nueva Noticia', new_noticia_path %>
 <%= link_to 'Categorias', categorias_path %>
+
+<div class="trade_pagination">
+<%= will_paginate @productos %>
+</div>
+
 </div>
 </div>
 </div>
