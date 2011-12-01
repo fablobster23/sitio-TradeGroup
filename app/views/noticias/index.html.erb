@@ -10,7 +10,7 @@
 <% @noticias.each do |noticia| %>
 	<div class="GaNoticias">
 	<div class="ImagenNoticia">
-  	<%= image_tag noticia.imagen, :size => "150 × 150" %>
+  	<%= image_tag noticia.imagen_url(:thumb).to_s if noticia.imagen? %>
   	</div>
   	<div class="Bloque">
     <h2><%= noticia.titulo %></h2>

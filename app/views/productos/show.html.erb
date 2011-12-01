@@ -5,8 +5,9 @@
 	<div class="contenido">
 	<div class="forma">
 <p id="notice"><%= notice %></p>
+
 <div id="showProducto">
- <%= @producto.imagen %>
+ <%= image_tag @producto.imagen_url %>
 <p>
   <b>Nombre:</b>
   <%= @producto.nombre %>
@@ -19,8 +20,8 @@
 </div>
 
 
-<%= link_to 'Edit', edit_producto_path(@producto) %> |
-<%= link_to 'Back', productos_path %>
+<%= link_to 'Editar', edit_producto_path(@producto) %> |
+<%= link_to 'Atras', productos_path %>
 </div>
 </div>
 </div>

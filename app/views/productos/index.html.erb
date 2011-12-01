@@ -19,10 +19,10 @@
   <tr>
     <td><%= producto.nombre %></td>
     <td><%= producto.descripcion %></td>
-    <td><%= producto.imagen %></td>
-    <td><%= link_to 'Show', producto %></td>
-    <td><%= link_to 'Edit', edit_producto_path(producto) %></td>
-    <td><%= link_to 'Destroy', producto, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= image_tag producto.imagen_url(:thumb).to_s if producto.imagen? %></td>
+    <td><%= link_to 'Leer', producto %></td>
+    <td><%= link_to 'Editar', edit_producto_path(producto) %></td>
+    <td><%= link_to 'Borrar', producto, confirm: '¿Esta seguro?', method: :delete %></td>
   </tr>
 <% end %>
 </table>

@@ -8,6 +8,8 @@ gem 'rails', '3.1.0'
 gem 'sqlite3'
 gem 'authlogic'
 gem 'will_paginate', '~> 3.0'
+gem 'carrierwave'
+gem 'rmagick'
 
 # Gems used only for assets and not required
 # in production environments by default.
