@@ -1,3 +1,6 @@
+<div class="contenedor">
+<div class="contenido">
+<div class="forma">
 <h1>Listing users</h1>
 
 <table>
@@ -7,6 +10,22 @@
     <th></th>
     <th></th>
   </tr>
+  
+    <div id="nav">
+        <% if current_user %>
+       
+        <%= link_to "Logout", :logout%>
+        </div>
+       
+        <% else %>
+        <div id="nav1">
+        <%= link_to "Register", new_user_path%> | 
+        <div id="nav2">
+        <%= link_to "Login", :login %>
+        <% end %>
+         </div>
+          </div>
+    </div>
 
 <% @users.each do |user| %>
   <tr>
@@ -19,5 +38,9 @@
 </table>
 
 <br />
-
+  <div id="usuario">
 <%= link_to 'New User', new_user_path %>
+	</div>
+</div>
+</div>
+</div>

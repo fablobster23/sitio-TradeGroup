@@ -94,6 +94,41 @@ position:relative;
 left:10px;
 z-index:100;}
 
+#nav a {
+margin-top:-17px;
+width:940px;
+background-color:#d1d9ff;
+position:relative;
+left:40px;
+z-index:100;}
+
+#nav1 a {
+margin-top:-17px;
+width:940px;
+background-color:#d1d9ff;
+position:relative;
+left:60px;
+z-index:700;}
+
+
+#nav2 a {
+margin-top:-17px;
+width:940px;
+background-color:#d1d9ff;
+position:relative;
+left:60px;
+z-index:700;}
+
+#usuario {
+margin-top:-17px;
+width:940px;
+background-color:#d1d9ff;
+position:relative;
+left:40px;
+z-index:100;}
+
+
+
 .contenidoDos {
 margin-top:0px;
 width:940px;
@@ -187,6 +222,8 @@ padding-Bottom:0px;}
 text-decoration:none;
 color:#FFF;
 text-align:center;}
+
+
 
 .preview p {background-color:$azul;
 height:30px;

@@ -34,17 +34,7 @@
 	<div class="break">
 	</div>
 	
-	  <div id="nav">
-        <% if current_user %>
-       
-        <%= link_to "Logout", :logout%>
-       
-        <% else %>
-        <%= link_to "Register", new_user_path%> | 
-        
-        <%= link_to "Login", :login %>
-        <% end %>
-    </div>
+	
     
 
 	<%= yield %>
