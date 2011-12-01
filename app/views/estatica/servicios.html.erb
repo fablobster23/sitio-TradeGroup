@@ -3,9 +3,15 @@
 	<%= image_tag "triangulo.png", :size=>"60x36" %>
 	</div>
 	<div class="contenido">
+	
 	<h1>Servicios</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mauris diam, egestas eget dictum eget, convallis id nulla. Integer nec purus massa, a laoreet ante. Vestibulum at turpis a dui fringilla vestibulum eu vitae orci. Duis sapien libero, euismod sit amet consequat sollicitudin, fermentum vitae ligula. Cras consectetur leo ac eros malesuada sit amet malesuada nisi eleifend. Nunc malesuada consectetur nisl et hendrerit. Quisque fringilla est vel nibh tincidunt sit amet interdum mauris pretium. Etiam cursus lacus ac massa suscipit eget mattis sem consequat. Quisque tincidunt eros sit amet lacus dignissim eleifend. Quisque non justo urna. </p>
+	<p>Buscamos que  nuestros clientes se liberen de toda carga y sus compras en el extranjero sean más sencillas y ágiles.</p>
+	<p>Búsqueda de productos en todo el mundo. Localización de proveedores y productos específicos, para compra directa o manufactura de productos.</p>
+	<p>Coordinación de logística Origen – Destino  (house to house).</p>
+	<p>Tramite de importación (pago de impuestos y coordinación aduanal)</p>
+	<p>Gestionamos el padrón de importador del cliente o el de nuestra empresa.</p>
 	</div>
+	
 	<div class="galeria">
 	<h2>Noticias Nuevas</h2>
 		<% @todasnoticias = Noticia.find(:all, :order => 'titulo', :limit => 3) %>
